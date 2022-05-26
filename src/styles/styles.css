@@ -1,0 +1,10 @@
+@import "../assets/fonts/Golos-Text_Bold.css";
+@import "../assets/fonts/Golos-Text_DemiBold.css";
+@import "../assets/fonts/Golos-Text_Medium.css";
+@import "../assets/fonts/Golos-Text_Regular.css";
+@import "../assets/fonts/MuseoSansCyrl.css";
+
+body{
+    font-family: "Golos", "Museo Sans Cyrl", "Russo One", sans-serif
+}
+    

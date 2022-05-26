@@ -1,0 +1,96 @@
+.cards
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    margin-top: 3.938rem
+    &__card
+        width: 35.625rem
+        height: 21.875rem
+        display: flex
+        flex-direction: column
+        background: white
+        border-radius: 38px
+        overflow: hidden
+        padding-left: 3.25rem
+        padding-bottom: 2.688rem
+        &:nth-child(2n)
+            margin-left: 1.875rem
+        &:nth-child(n+3)
+            margin-top: 1.875rem
+    &__cardTitle
+        display: flex
+        justify-content: flex-start
+        align-items: center        
+        margin-top: 3.25rem
+    &__cardCircle
+        height: 3.614rem
+        width: 3.614rem
+        border-radius: 50%
+        background: $maincolor
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-right: 1.813rem
+        color: white
+        font-weight: 600
+        font-size: 1.25rem
+    &__cardSubtitle
+        font-weight: 600
+        font-size: 1.375rem
+        color: $darkMainColor
+    &__cardDescr
+        width: 29.563rem        
+        color: $darkMainColor
+        margin-top: 1.875rem
+        span
+            font-weight: 600
+    &__cardDescr p
+        font-size: 1.125rem
+        margin-top: 1.875rem
+        &:nth-child(1)
+            margin-top: 0
+    &_process
+        flex-direction: column
+        margin-top: 2.875rem
+        margin-left: 6.25rem
+        margin-right: 4.438rem
+        .cards__card            
+            margin: 0
+            width: 37.5rem
+            height: auto
+            position: relative  
+            margin-top: 1.875rem
+            padding-right: 3rem          
+            &:nth-child(odd)
+                left: -20%
+            &:nth-child(even)
+                right: -20%  
+            &:nth-child(2n+4)
+                left: -20%
+            &:nth-child(2n+3)
+                left: auto
+                right: -20%
+            &:nth-child(3)
+                left: 0     
+        .cards__cardDescr
+            margin-top: 1.5rem
+        .cards__cardSubtitle  
+            width: 80%     
+            font-size: 1.125rem
+            color: $darkMainColor
+            font-weight: normal
+            span
+                font-weight: 600    
+                font-size: 1.125rem 
+        .cards__ol
+            margin-left: 1rem
+            li
+                margin-top: 2rem
+                font-size: 1.125rem
+                line-height: 25px
+           
+
+                
+            
+

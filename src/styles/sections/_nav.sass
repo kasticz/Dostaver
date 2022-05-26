@@ -1,0 +1,83 @@
+.nav
+    min-height: 7.669rem
+    position: fixed
+    width: 100%
+    background: $maincolor
+    z-index: 1000
+    &__contentWrapper
+        display: flex
+        justify-content: center
+        align-items: center
+    &__anchorsWrapper
+        display: flex
+        width: 20.625rem
+        justify-content: space-around
+        align-items: center
+    &__anchor
+        font-family: 'Golos'
+        font-weight: 500
+        font-size: 0.938rem
+        color: #FFFFFF 
+        text-decoration: none
+        transition: 0s all
+        -webkit-text-stroke: 0.035em black
+        &:hover
+            opacity: 0.45
+    &__logoWrapper
+        background: white
+        width: 13.75rem
+        height: 7.668rem
+        border-bottom-left-radius: 43px
+        border-bottom-right-radius: 43px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-left: 9.063rem
+        margin-right: 6.25rem
+        text-decoration: none
+    &__logoText
+        margin-left: 0.766rem
+        color: $darkMainColor
+        font-family: 'Russo One'
+        font-size: 1rem
+        letter-spacing: 0.03em
+    &__contacts
+        display: flex
+        align-items: center
+    &__telWrapper
+        width: 13.938rem
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+    &__telephone
+        font-family: 'Golos'
+        text-decoration: none
+        color: white
+        font-weight: 500
+        font-size: 1.5rem
+    &__telDescr
+        font-family: 'Golos'
+        font-size: 1rem
+        color: #FFFFFF
+        -webkit-text-stroke: 0.035em black
+        span            
+            font-weight: 500
+    &__socials
+        width: 3.75rem
+        height: 2.5rem
+        border-radius: 20px
+        display: flex
+        justify-content: center
+        align-items: center
+        transition: 0s all
+    &__socialsWhatsApp
+        background: #48DB45
+        margin-left: 1.625rem          
+        &:hover
+            background: #21C41D      
+    &__socialsTel
+        background: #02ADFF
+        margin-left: 0.375rem
+        &:hover
+            background: #0096DE
+                

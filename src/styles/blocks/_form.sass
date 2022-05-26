@@ -1,0 +1,77 @@
+.form
+    display: flex
+    flex-direction: column 
+    align-items: center    
+    position: relative 
+    &__telInput,button
+        width: 17.75rem
+        height: 5.375rem
+        border-radius: 43px
+        text-align: center
+        border: none        
+    &__telInput
+        margin-right: 0.625rem  
+        font-size: 1.1rem
+        color: $darkMainColor
+    &__mainInputsWrapper
+        display: flex
+        margin-top: 2.5rem
+    &__submit
+        font-weight: 600
+        font-size: 0.9rem
+        text-align: center
+        letter-spacing: 0.02em
+        color: #3E3300
+        background: $secondaryColor  
+        cursor: pointer  
+        transition: 0s all    
+        &:hover
+            background: #FFD500
+    &__checkBoxWrapper
+        margin-top: 0.688rem
+        display: flex
+        align-items: center
+    &__checkbox
+        position: relative
+        transform: translate(10px,10px)
+        width: 1px
+        height: 1px      
+        &:checked + label:before
+            content: url("../assets/images/checkbox.svg")
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+    label
+        width: 18px
+        height: 18px
+        border-radius: 50% 
+        background: white    
+        position: relative  
+    &__checkBoxDescr
+        margin-left: 0.688rem
+        font-size: 12px
+        color: #FFFFFF     
+    &__error
+        position: absolute
+        top: 10%
+        left: 50%
+        transform: translateX(-50%)
+        color: #e55959
+        font-size: 1rem
+
+
+
+.form
+    &_legal
+        .form__telInput,.form__submit
+            width: 20rem
+
+.form
+    &_contacts
+        .form__telInput,.form__submit
+             width: 20rem
+
+
+
+

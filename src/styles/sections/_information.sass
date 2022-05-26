@@ -1,0 +1,36 @@
+.information
+    min-height: 35.875rem
+    background-color: $maincolor
+    .container
+        background: white
+        border-radius: 38px
+        padding: 6.25rem 7.063rem 7.625rem 10.313rem
+    &__contentWrapper
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-wrap: wrap        
+        margin-top: 3.063rem
+    &__item
+        width: 36%
+        padding-top: 3.25rem
+        text-align: center
+        color: $darkMainColor
+        font-size: 1.125rem
+        position: relative
+        &:nth-child(2)
+            margin-left: 4.438rem 
+        &:nth-child(n+4)
+            margin-left: 0.5rem            
+        &:nth-child(n+3)
+            width: 32%
+            margin-top: 3.25rem
+        span
+            font-weight: 600
+        &:before            
+            content: url("../assets/images/informationicon.svg")
+            position: absolute
+            top: 0
+            left: 50%
+            transform:  translate(-50%,10%)
+            

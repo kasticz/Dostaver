@@ -1,0 +1,32 @@
+.price
+    min-height: 63.125rem
+    padding: 6.25rem 0 3.875rem 0
+    background: url("../assets/background/pricebg.png") center center/cover no-repeat
+    background-color: $maincolor
+    &__priceTable
+        width: 48.188rem
+        margin: 0 auto
+        display: grid
+        grid-template-columns: 16.313rem 8rem 8rem 8rem 8rem
+        grid-template-rows: 4.75rem 4.75rem 4.75rem 4.75rem 4.75rem 4.75rem 4.75rem 4.75rem 4.75rem
+        border: 1px solid white
+        border-radius: 38px
+        overflow: hidden
+        background: $maincolor
+        margin-top: 3.938rem
+        gap: 1px
+    &__pricaTableCell
+        display: flex
+        justify-content: center
+        align-items: center  
+        font-weight: 600
+        font-size: 1.25rem 
+        outline: 1px solid white
+        color: #FFFFFF      
+        &:nth-child(5n + 11),&:nth-child(2),&:nth-child(3),&:nth-child(4),&:nth-child(5)        
+            background-color: white   
+            color: $maincolor
+            outline: 1px solid $maincolor
+        &:nth-child(5n + 11)
+            justify-content: flex-start
+            padding: 0 0 0 2.625rem
