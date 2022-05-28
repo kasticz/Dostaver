@@ -11,27 +11,31 @@
     <nav class="nav">
         <div class="container">
             <div class="nav__contentWrapper">
-            <d iv class="nav__anchorsWrapper">
+            <div class="nav__anchorsWrapper">
                 <a  href="./rules.html" target="_blank" class="nav__anchor">Правила</a>
                 <a href="#price" class="nav__anchor">Тарифы</a>
                 <a href="#contacts" class="nav__anchor">Контакты</a>
                 <a target="_blank" href="./404.html" class="nav__anchor">404</a>
-            </d>
+            </div>
             <a href="#header" class="nav__logoWrapper">
                 <img src="./assets/images/navlogo.svg" alt="" class="nav__logo">
                 <div class="nav__logoText">DOSTAVER</div>
+                <div class=" burger nav__burgerSmall"> <span></span> <span></span> <span></span> </div>
             </a>
-            <div class="reach reach__nav">
+            <div class="reach reach_nav">
                 <div class="reach__telWrapper">
                     <a href="tel:74994084770" class="reach__telephone">+7 499 408 47 70 </a>
                     <div class="reach__telDescr">ежедневно с <span>08:00</span>  до <span>20:00</span> </div>
                 </div> 
-                <a href="#" class="reach__socials reach__socialsWhatsApp">
-                    <img src="./assets/images/navwhatsapplogo.svg" alt="" class="reach__WhatsAppLogo"></a>
-                <a href="#" class="reach__socials reach__socialsTel">
-                    <img src="./assets/images/navtellogo.svg" alt="" class="reach__TelLogo">
-                </a>
-            </div>
+                <div class="reach__socialsWrapper">
+                    <a href="#" class="reach__socials reach__socialsWhatsApp">
+                        <img src="./assets/images/navwhatsapplogo.svg" alt="" class="reach__WhatsAppLogo"></a>
+                    <a href="#" class="reach__socials reach__socialsTel">
+                        <img src="./assets/images/navtellogo.svg" alt="" class="reach__TelLogo">
+                    </a>
+                </div> 
+                <div class=" burger nav__burgerMedium"> <span></span> <span></span> <span></span> </div>
+            </div>            
             </div>
         </div>
     </nav>
@@ -59,6 +63,7 @@
                 <div class="circle__outerText">доставили вовремя
                     в декабре 2021</div>
             </div>
+            <img src="./assets/images/mobileheaderimg.png" alt="" class="header__mobileImg">
         </div>
     </header>
     <section id="price" class="price">
@@ -112,6 +117,7 @@
                 <div class="price__pricaTableCell">0</div>
                 <div class="price__pricaTableCell">290</div>
             </div>
+            <img src="./assets/images/mobilepreiceimg.png" alt="" class="price__mobileimg">
     </div>
 </section>
 <section class="organization">
@@ -166,6 +172,7 @@
             </div>
         </div>
         <a target="_blank" href="./rules.html" class="underlineAnchor underlineAnchor_organization">Подробнее</a>
+        <img src="./assets/images/mobileorganizationimg.png" alt="" class="organization__mobileimg">
     </div>
 </section>
 <section class="legal">
@@ -198,19 +205,24 @@
         <div class="title title_information">Важная информация</div>
         <div class="information__contentWrapper">
             <div class="information__item">
-                <div class="information__itemDescr">на каждом чеке <span>в графе «продавец» будет напечатано название вашего юр. лица,</span>  в том числе и на цифровых чеках в онлайн ОФД</div>
+                <img src="./assets/images/informationicon.svg" alt="" class="information__icon">
+                <div class="information__itemDescr">На каждом чеке <span>в графе «продавец» будет напечатано название вашего юр. лица,</span>  в том числе и на цифровых чеках в онлайн ОФД</div>
             </div>
             <div class="information__item">
-                <div class="information__itemDescr"><span>на следующий день</span>  после доставок мы <span>переводим</span>  на ваш расчётный счёт всю выручку: наличные оплаты и оплаты по терминалу</div>
+                <img src="./assets/images/informationicon.svg" alt="" class="information__icon">
+                <div class="information__itemDescr"><span>На следующий день</span>  после доставок мы <span>переводим</span>  на ваш расчётный счёт всю выручку: наличные оплаты и оплаты по терминалу</div>
             </div>
             <div class="information__item">
-                <div class="information__itemDescr">стоимость кассового обслуживания <br> <span>0,7% от суммы чека</span> </div>
+                <img src="./assets/images/informationicon.svg" alt="" class="information__icon">
+                <div class="information__itemDescr">Стоимость кассового обслуживания <br> <span>0,7% от суммы чека</span> </div>
             </div>
             <div class="information__item">
-                <div class="information__itemDescr">стоимость эквайринга <br> <span>1,7% от суммы чека</span> </div>
+                <img src="./assets/images/informationicon.svg" alt="" class="information__icon">
+                <div class="information__itemDescr">Стоимость эквайринга <br> <span>1,7% от суммы чека</span> </div>
             </div>
             <div class="information__item">
-                <div class="information__itemDescr">оплата за страховой сбор <br>
+                <img src="./assets/images/informationicon.svg" alt="" class="information__icon">
+                <div class="information__itemDescr">Оплата за страховой сбор <br>
                     <span>0,5% от объявленной ценности</span> </div>
             </div>
         </div>
@@ -219,7 +231,7 @@
 <section class="status">
     <div class="container">
         <div class="title title_status">Ваши клиенты будут в курсе о статусе своих доставок</div>
-        <div class="subtitle subtitle_status">Вашим менеджерам не придётся заниматься дополнительной работой и отвечать всем клиентам, когда они получат свои посылки. Информирование мы полностью берём на себя. Связываемся с вами только в случае необходимости, если клиент не выходит на связь</div>
+        <div class="subtitle subtitle_status">Вашим менеджерам не придётся заниматься дополнительной работой и отвечать всем клиентам, когда они получат свои посылки. <br> <br> <br>  Информование мы полностью берём на себя. Связываемся с вами только в случае необходимости, если клиент не выходит на связь</div>
         <status class="status__contentWrapper">
             <div class="status__card">
                 <img src="./assets/images/iconphone.svg" alt="" class="status__cardIcon">
@@ -242,27 +254,29 @@
 <section class="experience">
     <div class="container">
         <div class="title">Мой опыт — ваша гарантия <br> качественных услуг доставки</div>
-        <div class="subtitle subtitle_experience">Будем знакомы — <span>Владислав Каткаев</span> , основатель курьерской <br> службы Dostaver, лично контролирую работу курьеров.</div>
-        <div class="circle circle_experience">
-            <div class="circle__innerText">6 лет</div>
-            <div class="circle__innerDescr">с 2016 работаю в сфере курьерских доставок </div>
-        </div>
-        <div class="circle circle_experience">
-            <div class="circle__innerText">4000+</div>
-            <div class="circle__innerDescr">доставил минимум 4000 разных посылок</div>
-        </div>
-        <div class="circle circle_experience">
-            <img src="./assets/images/experiencephoto.jpg" alt="" class="experience__imgPhoto">
-        </div>
-        <div class="circle circle_experience">
-            <div class="circle__innerText">12</div>
-            <div class="circle__innerDescr">собрал команду из 12 курьеров (пешие + авто)</div>
-        </div>
-        <div class="circle circle_experience circle_big">
-            <div class="circle__innerText">2700+</div>
-            <div class="circle__innerDescr">клиентов из YouDo оценили мою работу на 5 <br> по статистике за 3 года работы — с 2019 по 2021</div>
-            <img src="./assets/images/experiencerating.jpg" alt="">
-            <a href="#" class="underlineAnchor underlineAnchor_experience">Посмотреть профиль</a>
+        <div class="subtitle subtitle_experience">Будем знакомы — <span>Владислав Каткаев</span>, основатель курьерской <br> службы Dostaver, лично контролирую работу курьеров.</div>     
+        <div class="experience__circlesWrapper">
+            <div class="circle circle_experience">
+                <div class="circle__innerText">6 лет</div>
+                <div class="circle__innerDescr">с 2016 работаю в сфере курьерских доставок </div>
+            </div>
+            <div class="circle circle_experience">
+                <div class="circle__innerText">4000+</div>
+                <div class="circle__innerDescr">доставил минимум 4000 разных посылок</div>
+            </div>
+            <div class="circle circle_experience">
+                <img src="./assets/images/experiencephoto.jpg" alt="" class="experience__imgPhoto">
+            </div>
+            <div class="circle circle_experience">
+                <div class="circle__innerText">12</div>
+                <div class="circle__innerDescr">собрал команду из 12 курьеров (пешие + авто)</div>
+            </div>
+            <div class="circle circle_experience circle_big">
+                <div class="circle__innerText">2700+</div>
+                <div class="circle__innerDescr">клиентов из YouDo оценили мою работу на 5 <br> по статистике за 3 года работы — с 2019 по 2021</div>
+                <img src="./assets/images/experiencerating.jpg" alt="">
+                <a href="#" class="underlineAnchor underlineAnchor_experience">Посмотреть профиль</a>
+            </div>
         </div>
     </div>
 </section>

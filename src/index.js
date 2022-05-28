@@ -73,3 +73,53 @@ inputs.forEach((item)=>{
         item.value = "+7"
     })
 })
+
+
+
+let burgers = document.querySelectorAll(".burger")
+let logo = document.querySelector(".nav__logoWrapper")
+function onBurgerClick(e){   
+    e.preventDefault()   
+    let currBurger = window.innerWidth > 450 ? burgers[1]: burgers[0]
+    currBurger.removeEventListener(`click`,onBurgerClick)
+    // logo.removeEventListener(`click`,onBurgerClick)
+    let navAnchors = document.querySelector(".nav__anchorsWrapper")   
+    if(currBurger.contains(e.target) || e.target.contains(currBurger)){        
+
+        let spans = currBurger.querySelectorAll("span")
+        spans[1].style.display = `none`
+        spans[0].style.transform = `rotate(45deg) translate(2px, 1px)` 
+        spans[2].style.transform = `rotate(-45deg) translate(1px, 0px)`
+        spans[2].style.marginTop = '0'
+    
+    
+    
+        navAnchors.style.display = `flex`
+    
+        function back(e){     
+            e.preventDefault()   
+            spans[0].style.transform = `none` 
+            spans[2].style.transform = `none`
+            spans[2].style.marginTop = '5px'
+            spans[1].style.display = `block`
+            navAnchors.style.display = `none`
+            currBurger.removeEventListener(`click`,back)
+            // logo.removeEventListener(`click`,back)
+            currBurger.addEventListener(`click`,onBurgerClick)
+            // logo.addEventListener(`click`,onBurgerClick)
+          }
+          currBurger.addEventListener(`click`,back)
+        //   logo.addEventListener(`click`,back)  
+
+    }else{
+        return
+    }
+
+
+
+
+}
+
+burgers.forEach((item)=>{
+    item.addEventListener(`click`,onBurgerClick)
+})
