@@ -43,7 +43,7 @@
   margin-right: 6.25rem;
   text-decoration: none;
 }
-.nav__logoWrapper img {
+.nav__logoWrapper__logo {
   width: 2.25rem;
   height: 2.25rem;
 }
@@ -127,6 +127,8 @@
 }
 .header__mobileImg {
   display: none;
+  width: 25rem;
+  height: 23rem;
 }
 
 h1 {
@@ -208,6 +210,8 @@ h1 span {
 }
 .form__error {
   position: absolute;
+  text-align: center;
+  width: 100%;
   top: 10%;
   left: 50%;
   transform: translateX(-50%);
@@ -261,6 +265,7 @@ h1 span {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 1rem;
 }
 .circle_experience .circle__innerText {
   font-size: 2.5rem;
@@ -341,6 +346,8 @@ h1 span {
 }
 .price__mobileimg {
   display: none;
+  width: 23rem;
+  height: 12rem;
 }
 
 .title, .subtitle {
@@ -387,6 +394,8 @@ h1 span {
 }
 .organization__mobileimg {
   display: none;
+  width: 24rem;
+  height: 30rem;
 }
 
 .legal {
@@ -840,7 +849,7 @@ h1 span {
   min-height: 65.875rem;
   background: url(a51f66ad2c78ccb8a0da.png) center center/contain no-repeat;
   background-color: #7700D1;
-  padding: 8.313rem 0 9.375rem 0;
+  padding: 5rem 0 6rem 0;
 }
 .ways__icon {
   display: block;
@@ -1018,6 +1027,8 @@ h1 span {
 .thanks__icon {
   display: block;
   margin: 0 auto;
+  width: 8.5rem;
+  height: 8.5rem;
 }
 .thanks__title, .thanks__descr {
   font-family: "Museo Sans Cyrl";
@@ -1071,8 +1082,8 @@ html {
   }
 
   .circle_big img {
-    width: 21rem;
-    height: 11rem;
+    width: 85%;
+    height: 40%;
   }
 }
 @media (max-width: 1092px) {
@@ -1089,14 +1100,39 @@ html {
     width: 35rem;
     height: 35rem;
   }
-  .circle_experience:nth-child(7) img {
-    width: 27rem;
-    height: 13rem;
-  }
 
-  .nav__logoWrapper img {
+  .nav__logo {
     width: 3rem;
     height: 3rem;
+  }
+
+  .package__Descr {
+    font-size: 1.5rem;
+  }
+
+  .cards_process .cards__cardSubtitle {
+    font-size: 1.5rem;
+  }
+  .cards_process .cards__cardSubtitle span {
+    font-size: 1.5rem;
+  }
+  .cards_process .cards__ol, .cards_process .cards__ol li {
+    font-size: 1.5rem;
+  }
+
+  .ways__title {
+    font-size: 2rem;
+  }
+  .ways__tableLikeSegments, .ways__tableLikeSegments a {
+    font-size: 1.5rem;
+  }
+  .ways__itemDescr {
+    font-size: 1.5rem;
+  }
+
+  .underlineAnchor_ways {
+    width: 12rem;
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 800px) {
@@ -1126,10 +1162,6 @@ html {
     left: 45%;
     width: 36rem;
     height: 36rem;
-  }
-  .circle_experience:nth-child(5) img {
-    width: 31rem;
-    height: 15rem;
   }
 
   .reach__socialsWrapper {
@@ -1211,6 +1243,7 @@ html {
   }
   .footer__item:nth-child(2) {
     margin-right: 0;
+    margin-left: 1rem;
     text-align: center;
   }
   .footer__item:nth-child(3) {
@@ -1224,12 +1257,34 @@ html {
   .underlineAnchor_footer:nth-child(1) {
     margin-right: 2rem;
   }
+  .underlineAnchor_footer:nth-child(2) {
+    margin-top: 1rem;
+  }
 
+  .ways {
+    padding: 3rem 0;
+  }
   .ways__profitAndReportWrapper {
     width: 80%;
   }
   .ways__item {
     width: 80%;
+  }
+
+  .thanks {
+    padding: 3rem 3rem 4rem 3rem;
+    width: 60%;
+    height: 50%;
+  }
+  .thanks__title {
+    font-size: 3.5rem;
+  }
+  .thanks__descr {
+    font-size: 2rem;
+  }
+  .thanks__icon {
+    width: 12rem;
+    height: 12rem;
   }
 }
 @media (max-width: 600px) {
@@ -1249,8 +1304,6 @@ html {
     z-index: 3000;
   }
   .nav__anchorsWrapper a {
-    display: block;
-    width: 10%;
     margin-left: 2rem;
     margin-top: 2rem;
     font-size: 3rem;
@@ -1402,6 +1455,9 @@ html {
     left: 5%;
     margin-top: 5rem;
   }
+  .header__subtitle {
+    font-size: 1.7rem;
+  }
 
   .form__mainInputsWrapper {
     flex-direction: column;
@@ -1414,6 +1470,10 @@ html {
     font-size: 1.5rem;
   }
   .form__checkBoxDescr {
+    font-size: 1.5rem;
+  }
+  .form__error {
+    top: 3%;
     font-size: 1.5rem;
   }
 
@@ -1494,6 +1554,9 @@ html {
   }
   .cards_process {
     margin-top: 0;
+  }
+  .cards_process .cards__card {
+    padding-right: 0;
   }
 
   .underlineAnchor {
@@ -1637,18 +1700,6 @@ html {
     font-size: 1.5rem;
   }
 
-  .thanks {
-    padding: 3rem 3rem 4rem 3rem;
-    width: 80%;
-    height: 50%;
-  }
-  .thanks__title {
-    font-size: 3.5rem;
-  }
-  .thanks__descr {
-    font-size: 2rem;
-  }
-
   .process {
     padding-top: 10rem;
     background: #7700D1;
@@ -1712,6 +1763,12 @@ html {
   .privacyPolicy__Descr {
     font-size: 1.5rem;
   }
+
+  .thanks {
+    padding: 3rem 3rem 4rem 3rem;
+    width: 70%;
+    height: 50%;
+  }
 }
 @media (max-width: 450px) {
   .nav__anchorsWrapper a {
@@ -1723,6 +1780,9 @@ html {
 
   .header {
     padding: 5rem 0 0 0;
+  }
+  .header__subtitle {
+    font-size: 2rem;
   }
 
   .nav {
@@ -1738,7 +1798,7 @@ html {
     width: 70%;
     justify-content: flex-start;
   }
-  .nav__logoWrapper img {
+  .nav__logo {
     width: 5rem;
     height: 5rem;
     margin-left: 2rem;
@@ -1793,6 +1853,17 @@ html {
 
   .process {
     padding-top: 6rem;
+  }
+
+  .form__error {
+    top: 0;
+    font-size: 2rem;
+  }
+
+  .thanks {
+    padding: 3rem 3rem 4rem 3rem;
+    width: 80%;
+    height: 35%;
   }
 }
 /*!*************************************************************************************!*\
