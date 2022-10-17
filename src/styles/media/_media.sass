@@ -94,8 +94,13 @@
         &__cardDescr
             width: 27rem
         &__card
-            width: 30rem
+            width: 35rem
             padding-left: 2rem
+            &:nth-child(n+2)
+                margin-top: 15px
+            &:nth-child(2n)
+                margin-left: 0
+                
         &_process          
             margin: 0
             .cards__ol  
